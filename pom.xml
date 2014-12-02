@@ -72,8 +72,6 @@
 
                             <dataSet>
 
-
-
                                 <data>
 
                                     <src>${basedir}/src/main/init.d/</src>
@@ -93,7 +91,7 @@
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
                                     <includes>**</includes>
-                                    <excludes>bin/**</excludes>
+                                    <excludes>kibana-4.0.0-BETA2/bin/**</excludes>
 
                                     <mapper>
                                         <type>perm</type>
@@ -108,7 +106,7 @@
 
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
-                                    <includes>bin/**</includes>
+                                    <includes>kibana-4.0.0-BETA2/bin/**</includes>
 
                                     <mapper>
                                         <type>perm</type>
