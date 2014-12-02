@@ -91,6 +91,20 @@
 
                                 <data>
 
+                                    <src>${basedir}/src/main/bin</src>
+                                    <type>directory</type>
+                                    <includes>**</includes>
+
+                                    <mapper>
+                                        <type>perm</type>
+                                        <prefix>${package.installdir}/bin</prefix>
+                                        <filemode>755</filemode>
+                                    </mapper>
+
+                                </data>
+
+                                <data>
+
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
                                     <includes>**</includes>
