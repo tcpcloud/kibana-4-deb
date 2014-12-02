@@ -96,6 +96,7 @@
 
                                     <mapper>
                                         <type>perm</type>
+                                        <strip>1</strip>
                                         <prefix>${package.installdir}</prefix>
                                         <filemode>755</filemode>
                                     </mapper>
