@@ -77,7 +77,7 @@
                                 <data>
 
                                     <src>${basedir}/src/main/init.d/</src>
-                                    <type>dir</type>
+                                    <type>directory</type>
                                     <includes>**</includes>
 
                                     <mapper>
