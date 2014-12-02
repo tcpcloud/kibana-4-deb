@@ -72,6 +72,22 @@
 
                             <dataSet>
 
+
+
+                                <data>
+
+                                    <src>${basedir}/src/main/init.d/</src>
+                                    <type>dir</type>
+                                    <includes>**</includes>
+
+                                    <mapper>
+                                        <type>perm</type>
+                                        <prefix>/etc/init.d</prefix>
+                                        <filemode>755</filemode>
+                                    </mapper>
+
+                                </data>
+
                                 <data>
 
                                     <src>${project.build.directory}/${download.filename}</src>
