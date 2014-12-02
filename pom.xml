@@ -23,6 +23,9 @@
         <download.url>https://download.elasticsearch.org/kibana/kibana/</download.url>
         <download.filename>kibana-4.0.0-BETA2.tar.gz</download.filename>
 
+        <!-- the first directory in the tar.gz -->
+        <download.tar.dir>kibana-4.0.0-BETA2</download.tar.dir>
+
     </properties>
 
     <build>
@@ -91,7 +94,7 @@
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
                                     <includes>**</includes>
-                                    <excludes>kibana-4.0.0-BETA2/bin/**</excludes>
+                                    <excludes>${download.tar.dir}/bin/**</excludes>
 
                                     <mapper>
                                         <type>perm</type>
@@ -106,7 +109,7 @@
 
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
-                                    <includes>kibana-4.0.0-BETA2/bin/**</includes>
+                                    <includes>${download.tar.dir}/bin/**</includes>
 
                                     <mapper>
                                         <type>perm</type>
