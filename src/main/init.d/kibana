@@ -36,7 +36,7 @@ DESC="Kibana 4"
 NAME="kibana"
 
 # Path to the service executable, e.g. /usr/bin/java
-DAEMON="/usr/share/kibana/bin/kibana-daemon"
+DAEMON="/usr/share/kibana/bin/kibana"
 
 # Arguments passed to the service startup
 DAEMON_ARGS=""
