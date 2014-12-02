@@ -30,7 +30,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Kibana 4"              # String describing the service
 NAME="kibana"                     # Name of the service, will be used in another vars
-DAEMON="/usr/bin/service-executable"      # Path to the service executable, e.g. /usr/bin/java
+DAEMON="/usr/share/kibana/bin/kibana"      # Path to the service executable, e.g. /usr/bin/java
 DAEMON_ARGS=""  # Arguments passed to the service startup
 
 WORK_DIR="/var/lib/${NAME}"               # Working directory where the service will be started, defaults to /var/lib/${NAME}
