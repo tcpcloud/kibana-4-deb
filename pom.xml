@@ -7,7 +7,7 @@
 
     <groupId>kibana</groupId>
     <artifactId>kibana</artifactId>
-    <version>4.0-beta3-1</version>
+    <version>4.0-1</version>
 
     <dependencies>
 
@@ -21,10 +21,10 @@
         <package.installdir>/usr/share/kibana</package.installdir>
 
         <download.url>https://download.elasticsearch.org/kibana/kibana/</download.url>
-        <download.filename>kibana-4.0.0-beta3.tar.gz</download.filename>
+        <download.filename>kibana-4.0.0-linux-x64.tar.gz</download.filename>
 
         <!-- the first directory in the tar.gz -->
-        <download.tar.dir>kibana-4.0.0-beta3</download.tar.dir>
+        <download.tar.dir>kibana-4.0.0-linux-x64</download.tar.dir>
 
     </properties>
 
