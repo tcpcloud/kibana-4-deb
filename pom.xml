@@ -7,7 +7,7 @@
 
     <groupId>kibana</groupId>
     <artifactId>kibana</artifactId>
-    <version>4.0-1</version>
+    <version>4.0.2-1</version>
 
     <dependencies>
 
@@ -21,10 +21,10 @@
         <package.installdir>/usr/share/kibana</package.installdir>
 
         <download.url>https://download.elasticsearch.org/kibana/kibana/</download.url>
-        <download.filename>kibana-4.0.0-linux-x64.tar.gz</download.filename>
+        <download.filename>kibana-4.0.2-linux-x64.tar.gz</download.filename>
 
         <!-- the first directory in the tar.gz -->
-        <download.tar.dir>kibana-4.0.0-linux-x64</download.tar.dir>
+        <download.tar.dir>kibana-4.0.2-linux-x64</download.tar.dir>
 
     </properties>
 
@@ -95,6 +95,7 @@
                                     <type>archive</type>
                                     <includes>**</includes>
                                     <excludes>${download.tar.dir}/bin/**</excludes>
+                                    <excludes>${download.tar.dir}/node/bin/**</excludes>
 
                                     <mapper>
                                         <type>perm</type>
@@ -124,6 +125,21 @@
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
                                     <includes>${download.tar.dir}/bin/**</includes>
+
+                                    <mapper>
+                                        <type>perm</type>
+                                        <strip>1</strip>
+                                        <prefix>${package.installdir}</prefix>
+                                        <filemode>755</filemode>
+                                    </mapper>
+
+                                </data>
+
+                                <data>
+
+                                    <src>${project.build.directory}/${download.filename}</src>
+                                    <type>archive</type>
+                                    <includes>${download.tar.dir}/node/bin/**</includes>
 
                                     <mapper>
                                         <type>perm</type>
