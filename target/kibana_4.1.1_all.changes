@@ -1,0 +1,20 @@
+Format: 1.8
+Date: Sun, 26 Jul 2015 22:14:10 +0000
+Source: kibana
+Binary: kibana
+Architecture: all
+Version: 4.1.1
+Distribution: unknown
+Urgency: low
+Maintainer: burton@spinn3r.com
+Changed-By: burton@spinn3r.com
+Description:
+ kibana - [[description]]
+Changes:
+ kibana (4.1.1) unknown; urgency=low
+Checksums-Sha1:
+ 8d1a1a65cad209aedce7b3abade7437cbde3aa10 11776568 kibana_4.1.1_all.deb
+Checksums-Sha256:
+ 28b3578f153ee71a51eef7da48c70a14209bbd6b7055bd887adb5f3bee30247e 11776568 kibana_4.1.1_all.deb
+Files:
+ 87ba1e3362a76628a19362a40ee7c4a4 11776568 misc low kibana_4.1.1_all.deb
