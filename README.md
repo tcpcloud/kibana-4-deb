@@ -7,4 +7,8 @@ These use start-stop-daemon to package the kibana 4 beta2 tar.gz into a regular 
 
 Files are installed into /usr/share/kibana
 
-There aren't any depenendencies setup so obviously you would need to have Java. 
+There aren't any depenendencies setup so obviously you would need to have Java.
+
+To build run:
+mvn package
+
