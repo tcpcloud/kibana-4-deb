@@ -1,0 +1,3 @@
+deluser kibana
+rm -fr /usr/share/kibana/optimize
+

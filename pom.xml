@@ -7,7 +7,7 @@
 
     <groupId>kibana</groupId>
     <artifactId>kibana</artifactId>
-    <version>4.1.2</version>
+    <version>4.3.0</version>
 
     <dependencies>
 
@@ -15,14 +15,14 @@
 
     <properties>
 
-        <package.fullversion>kibana-4.1.2</package.fullversion>
+        <package.fullversion>kibana-4.3.0</package.fullversion>
         <package.installdir>/usr/share/kibana</package.installdir>
 
         <download.url>http://download.elastic.co/kibana/kibana/</download.url>
-        <download.filename>kibana-4.1.2-linux-x64.tar.gz</download.filename>
+        <download.filename>kibana-4.3.0-linux-x64.tar.gz</download.filename>
 
         <!-- the first directory in the tar.gz -->
-        <download.tar.dir>kibana-4.1.2-linux-x64</download.tar.dir>
+        <download.tar.dir>kibana-4.3.0-linux-x64</download.tar.dir>
 
     </properties>
 
@@ -89,6 +89,20 @@
 
                                 <data>
 
+                                    <src>${basedir}/src/main/default/</src>
+                                    <type>directory</type>
+                                    <includes>**</includes>
+
+                                    <mapper>
+                                        <type>perm</type>
+                                        <prefix>/etc/default</prefix>
+                                        <filemode>644</filemode>
+                                    </mapper>
+
+                                </data>
+
+                                <data>
+
                                     <src>${project.build.directory}/${download.filename}</src>
                                     <type>archive</type>
                                     <includes>**</includes>
@@ -100,6 +114,8 @@
                                         <strip>1</strip>
                                         <prefix>${package.installdir}</prefix>
                                         <filemode>644</filemode>
+                                        <user>kibana</user>
+                                        <group>kibana</group>
                                     </mapper>
 
                                 </data>

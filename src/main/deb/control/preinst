@@ -1,0 +1,3 @@
+groupadd kibana
+useradd -g kibana kibana
+
